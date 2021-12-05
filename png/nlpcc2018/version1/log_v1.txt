@@ -1,0 +1,247 @@
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : fbwq_dir:/home/xhsun/Desktop/KG/nlpcc2018/knowledge/small_knowledge
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : webqas_dir:/home/xhsun/Desktop/KG/QApairs/ChineseQA
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : cache_dir:./cache_dir/Chinese
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : save_dir:./save_dir/Chinese_v2
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : ckpt:None
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : bert_lr:3e-05
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : lr:0.001
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : weight_decay:1e-05
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : num_epoch:30
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : batch_size:32
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : seed:666
+2021-12-05 10:11:42,471 - train_v2 - INFO - main - 171 : opt:radam
+2021-12-05 10:11:42,472 - train_v2 - INFO - main - 171 : warmup_proportion:0.1
+2021-12-05 10:11:42,472 - train_v2 - INFO - main - 171 : bert_name:/home/xhsun/Desktop/huggingfaceModels/chinese-roberta-wwm
+2021-12-05 10:11:48,920 - train_v2 - INFO - train - 87 : Start training........
+2021-12-05 10:11:53,517 - train_v2 - INFO - train - 90 : Accuracy before training is 0.0375
+2021-12-05 10:13:11,623 - train_v2 - INFO - main - 171 : fbwq_dir:/home/xhsun/Desktop/KG/nlpcc2018/knowledge/small_knowledge
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : webqas_dir:/home/xhsun/Desktop/KG/QApairs/ChineseQA
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : cache_dir:./cache_dir/Chinese
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : save_dir:./save_dir/Chinese_v2
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : ckpt:None
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : bert_lr:3e-05
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : lr:0.001
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : weight_decay:1e-05
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : num_epoch:30
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : batch_size:32
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : seed:666
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : opt:radam
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : warmup_proportion:0.1
+2021-12-05 10:13:11,624 - train_v2 - INFO - main - 171 : bert_name:/home/xhsun/Desktop/huggingfaceModels/chinese-roberta-wwm
+2021-12-05 10:13:17,627 - train_v2 - INFO - train - 87 : Start training........
+2021-12-05 10:13:22,179 - train_v2 - INFO - train - 90 : Accuracy before training is 0.0375
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : fbwq_dir:/home/xhsun/Desktop/KG/nlpcc2018/knowledge/small_knowledge
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : webqas_dir:/home/xhsun/Desktop/KG/QApairs/ChineseQA
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : cache_dir:./cache_dir/Chinese
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : save_dir:./save_dir/Chinese_v2
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : ckpt:None
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : bert_lr:3e-05
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : lr:0.001
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : weight_decay:1e-05
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : num_epoch:30
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : batch_size:32
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : seed:666
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : opt:radam
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : warmup_proportion:0.1
+2021-12-05 10:16:09,754 - train_v2 - INFO - main - 171 : bert_name:/home/xhsun/Desktop/huggingfaceModels/chinese-roberta-wwm
+2021-12-05 10:16:15,751 - train_v2 - INFO - train - 87 : Start training........
+2021-12-05 10:16:20,393 - train_v2 - INFO - train - 90 : Accuracy before training is 0.0375
+2021-12-05 10:16:31,525 - train_v2 - INFO - train - 123 : progress: 0.200  loss: 0.1965 (0.2027)  lr: 0.000002
+2021-12-05 10:16:42,655 - train_v2 - INFO - train - 123 : progress: 0.399  loss: 0.1964 (0.1989)  lr: 0.000004
+2021-12-05 10:16:53,733 - train_v2 - INFO - train - 123 : progress: 0.599  loss: 0.1798 (0.1949)  lr: 0.000006
+2021-12-05 10:17:04,855 - train_v2 - INFO - train - 123 : progress: 0.798  loss: 0.1779 (0.1890)  lr: 0.000008
+2021-12-05 10:17:15,989 - train_v2 - INFO - train - 123 : progress: 0.998  loss: 0.1482 (0.1835)  lr: 0.000010
+2021-12-05 10:17:20,224 - train_v2 - INFO - train - 138 : In epoch 1, accuracy is 0.0175
+2021-12-05 10:17:20,528 - train_v2 - INFO - train - 144 : previous acc is 0.0 and current acc is 0.0175
+2021-12-05 10:17:31,725 - train_v2 - INFO - train - 123 : progress: 1.200  loss: 0.1027 (0.1720)  lr: 0.000012
+2021-12-05 10:17:42,972 - train_v2 - INFO - train - 123 : progress: 1.399  loss: 0.0967 (0.1629)  lr: 0.000014
+2021-12-05 10:17:54,249 - train_v2 - INFO - train - 123 : progress: 1.599  loss: 0.0883 (0.1540)  lr: 0.000016
+2021-12-05 10:18:05,539 - train_v2 - INFO - train - 123 : progress: 1.798  loss: 0.0704 (0.1457)  lr: 0.000018
+2021-12-05 10:18:16,882 - train_v2 - INFO - train - 123 : progress: 1.998  loss: 0.0582 (0.1382)  lr: 0.000020
+2021-12-05 10:18:21,128 - train_v2 - INFO - train - 138 : In epoch 2, accuracy is 0.0205
+2021-12-05 10:18:21,538 - train_v2 - INFO - train - 144 : previous acc is 0.0175 and current acc is 0.0205
+2021-12-05 10:18:32,840 - train_v2 - INFO - train - 123 : progress: 2.200  loss: 0.0356 (0.1292)  lr: 0.000022
+2021-12-05 10:18:44,159 - train_v2 - INFO - train - 123 : progress: 2.399  loss: 0.0362 (0.1218)  lr: 0.000024
+2021-12-05 10:18:55,508 - train_v2 - INFO - train - 123 : progress: 2.599  loss: 0.0333 (0.1153)  lr: 0.000026
+2021-12-05 10:19:06,881 - train_v2 - INFO - train - 123 : progress: 2.798  loss: 0.0315 (0.1097)  lr: 0.000028
+2021-12-05 10:19:18,281 - train_v2 - INFO - train - 123 : progress: 2.998  loss: 0.0247 (0.1046)  lr: 0.000030
+2021-12-05 10:19:22,539 - train_v2 - INFO - train - 138 : In epoch 3, accuracy is 0.6125
+2021-12-05 10:19:22,948 - train_v2 - INFO - train - 144 : previous acc is 0.0205 and current acc is 0.6125
+2021-12-05 10:19:34,344 - train_v2 - INFO - train - 123 : progress: 3.200  loss: 0.0157 (0.0991)  lr: 0.000030
+2021-12-05 10:19:45,767 - train_v2 - INFO - train - 123 : progress: 3.399  loss: 0.0145 (0.0944)  lr: 0.000030
+2021-12-05 10:19:57,196 - train_v2 - INFO - train - 123 : progress: 3.599  loss: 0.0142 (0.0901)  lr: 0.000029
+2021-12-05 10:20:08,657 - train_v2 - INFO - train - 123 : progress: 3.798  loss: 0.0133 (0.0862)  lr: 0.000029
+2021-12-05 10:20:20,145 - train_v2 - INFO - train - 123 : progress: 3.998  loss: 0.0111 (0.0826)  lr: 0.000029
+2021-12-05 10:20:24,414 - train_v2 - INFO - train - 138 : In epoch 4, accuracy is 0.658
+2021-12-05 10:20:24,829 - train_v2 - INFO - train - 144 : previous acc is 0.6125 and current acc is 0.658
+2021-12-05 10:20:36,326 - train_v2 - INFO - train - 123 : progress: 4.200  loss: 0.0091 (0.0792)  lr: 0.000029
+2021-12-05 10:20:47,843 - train_v2 - INFO - train - 123 : progress: 4.399  loss: 0.0093 (0.0761)  lr: 0.000028
+2021-12-05 10:20:59,396 - train_v2 - INFO - train - 123 : progress: 4.599  loss: 0.0091 (0.0733)  lr: 0.000028
+2021-12-05 10:21:10,963 - train_v2 - INFO - train - 123 : progress: 4.798  loss: 0.0078 (0.0707)  lr: 0.000028
+2021-12-05 10:21:22,553 - train_v2 - INFO - train - 123 : progress: 4.998  loss: 0.0090 (0.0683)  lr: 0.000028
+2021-12-05 10:21:26,825 - train_v2 - INFO - train - 138 : In epoch 5, accuracy is 0.6845
+2021-12-05 10:21:27,237 - train_v2 - INFO - train - 144 : previous acc is 0.658 and current acc is 0.6845
+2021-12-05 10:21:38,852 - train_v2 - INFO - train - 123 : progress: 5.200  loss: 0.0061 (0.0659)  lr: 0.000028
+2021-12-05 10:21:50,439 - train_v2 - INFO - train - 123 : progress: 5.399  loss: 0.0065 (0.0638)  lr: 0.000027
+2021-12-05 10:22:02,044 - train_v2 - INFO - train - 123 : progress: 5.599  loss: 0.0056 (0.0617)  lr: 0.000027
+2021-12-05 10:22:13,701 - train_v2 - INFO - train - 123 : progress: 5.798  loss: 0.0058 (0.0599)  lr: 0.000027
+2021-12-05 10:22:25,440 - train_v2 - INFO - train - 123 : progress: 5.998  loss: 0.0063 (0.0582)  lr: 0.000027
+2021-12-05 10:22:29,712 - train_v2 - INFO - train - 138 : In epoch 6, accuracy is 0.6955
+2021-12-05 10:22:30,128 - train_v2 - INFO - train - 144 : previous acc is 0.6845 and current acc is 0.6955
+2021-12-05 10:22:41,893 - train_v2 - INFO - train - 123 : progress: 6.200  loss: 0.0047 (0.0565)  lr: 0.000026
+2021-12-05 10:22:53,702 - train_v2 - INFO - train - 123 : progress: 6.399  loss: 0.0045 (0.0549)  lr: 0.000026
+2021-12-05 10:23:05,560 - train_v2 - INFO - train - 123 : progress: 6.599  loss: 0.0053 (0.0535)  lr: 0.000026
+2021-12-05 10:23:17,474 - train_v2 - INFO - train - 123 : progress: 6.798  loss: 0.0041 (0.0522)  lr: 0.000026
+2021-12-05 10:23:29,418 - train_v2 - INFO - train - 123 : progress: 6.998  loss: 0.0051 (0.0508)  lr: 0.000026
+2021-12-05 10:23:33,695 - train_v2 - INFO - train - 138 : In epoch 7, accuracy is 0.7145
+2021-12-05 10:23:34,116 - train_v2 - INFO - train - 144 : previous acc is 0.6955 and current acc is 0.7145
+2021-12-05 10:23:46,084 - train_v2 - INFO - train - 123 : progress: 7.200  loss: 0.0041 (0.0496)  lr: 0.000025
+2021-12-05 10:23:58,112 - train_v2 - INFO - train - 123 : progress: 7.399  loss: 0.0038 (0.0484)  lr: 0.000025
+2021-12-05 10:24:10,177 - train_v2 - INFO - train - 123 : progress: 7.599  loss: 0.0036 (0.0473)  lr: 0.000025
+2021-12-05 10:24:22,305 - train_v2 - INFO - train - 123 : progress: 7.798  loss: 0.0036 (0.0462)  lr: 0.000025
+2021-12-05 10:24:34,456 - train_v2 - INFO - train - 123 : progress: 7.998  loss: 0.0039 (0.0452)  lr: 0.000024
+2021-12-05 10:24:38,731 - train_v2 - INFO - train - 138 : In epoch 8, accuracy is 0.7155
+2021-12-05 10:24:39,150 - train_v2 - INFO - train - 144 : previous acc is 0.7145 and current acc is 0.7155
+2021-12-05 10:24:51,385 - train_v2 - INFO - train - 123 : progress: 8.200  loss: 0.0033 (0.0442)  lr: 0.000024
+2021-12-05 10:25:03,625 - train_v2 - INFO - train - 123 : progress: 8.399  loss: 0.0034 (0.0433)  lr: 0.000024
+2021-12-05 10:25:15,909 - train_v2 - INFO - train - 123 : progress: 8.599  loss: 0.0031 (0.0424)  lr: 0.000024
+2021-12-05 10:25:28,217 - train_v2 - INFO - train - 123 : progress: 8.798  loss: 0.0028 (0.0415)  lr: 0.000024
+2021-12-05 10:25:40,558 - train_v2 - INFO - train - 123 : progress: 8.998  loss: 0.0027 (0.0407)  lr: 0.000023
+2021-12-05 10:25:44,841 - train_v2 - INFO - train - 138 : In epoch 9, accuracy is 0.7235
+2021-12-05 10:25:45,265 - train_v2 - INFO - train - 144 : previous acc is 0.7155 and current acc is 0.7235
+2021-12-05 10:25:57,697 - train_v2 - INFO - train - 123 : progress: 9.200  loss: 0.0029 (0.0399)  lr: 0.000023
+2021-12-05 10:26:10,198 - train_v2 - INFO - train - 123 : progress: 9.399  loss: 0.0029 (0.0392)  lr: 0.000023
+2021-12-05 10:26:22,717 - train_v2 - INFO - train - 123 : progress: 9.599  loss: 0.0026 (0.0385)  lr: 0.000023
+2021-12-05 10:26:35,282 - train_v2 - INFO - train - 123 : progress: 9.798  loss: 0.0027 (0.0378)  lr: 0.000022
+2021-12-05 10:26:47,928 - train_v2 - INFO - train - 123 : progress: 9.998  loss: 0.0021 (0.0371)  lr: 0.000022
+2021-12-05 10:26:52,219 - train_v2 - INFO - train - 138 : In epoch 10, accuracy is 0.719
+2021-12-05 10:27:04,846 - train_v2 - INFO - train - 123 : progress: 10.200  loss: 0.0020 (0.0364)  lr: 0.000022
+2021-12-05 10:27:17,577 - train_v2 - INFO - train - 123 : progress: 10.399  loss: 0.0019 (0.0358)  lr: 0.000022
+2021-12-05 10:27:30,373 - train_v2 - INFO - train - 123 : progress: 10.599  loss: 0.0021 (0.0352)  lr: 0.000022
+2021-12-05 10:27:43,129 - train_v2 - INFO - train - 123 : progress: 10.798  loss: 0.0022 (0.0346)  lr: 0.000021
+2021-12-05 10:27:55,940 - train_v2 - INFO - train - 123 : progress: 10.998  loss: 0.0022 (0.0341)  lr: 0.000021
+2021-12-05 10:28:00,231 - train_v2 - INFO - train - 138 : In epoch 11, accuracy is 0.724
+2021-12-05 10:28:00,652 - train_v2 - INFO - train - 144 : previous acc is 0.7235 and current acc is 0.724
+2021-12-05 10:28:13,450 - train_v2 - INFO - train - 123 : progress: 11.200  loss: 0.0018 (0.0335)  lr: 0.000021
+2021-12-05 10:28:26,346 - train_v2 - INFO - train - 123 : progress: 11.399  loss: 0.0015 (0.0330)  lr: 0.000021
+2021-12-05 10:28:39,304 - train_v2 - INFO - train - 123 : progress: 11.599  loss: 0.0021 (0.0325)  lr: 0.000020
+2021-12-05 10:28:52,260 - train_v2 - INFO - train - 123 : progress: 11.798  loss: 0.0018 (0.0320)  lr: 0.000020
+2021-12-05 10:29:05,235 - train_v2 - INFO - train - 123 : progress: 11.998  loss: 0.0020 (0.0315)  lr: 0.000020
+2021-12-05 10:29:09,517 - train_v2 - INFO - train - 138 : In epoch 12, accuracy is 0.7255
+2021-12-05 10:29:09,934 - train_v2 - INFO - train - 144 : previous acc is 0.724 and current acc is 0.7255
+2021-12-05 10:29:22,964 - train_v2 - INFO - train - 123 : progress: 12.200  loss: 0.0016 (0.0311)  lr: 0.000020
+2021-12-05 10:29:35,998 - train_v2 - INFO - train - 123 : progress: 12.399  loss: 0.0018 (0.0306)  lr: 0.000020
+2021-12-05 10:29:49,111 - train_v2 - INFO - train - 123 : progress: 12.599  loss: 0.0014 (0.0302)  lr: 0.000019
+2021-12-05 10:30:02,252 - train_v2 - INFO - train - 123 : progress: 12.798  loss: 0.0014 (0.0298)  lr: 0.000019
+2021-12-05 10:30:15,468 - train_v2 - INFO - train - 123 : progress: 12.998  loss: 0.0019 (0.0294)  lr: 0.000019
+2021-12-05 10:30:19,753 - train_v2 - INFO - train - 138 : In epoch 13, accuracy is 0.729
+2021-12-05 10:30:20,171 - train_v2 - INFO - train - 144 : previous acc is 0.7255 and current acc is 0.729
+2021-12-05 10:30:33,472 - train_v2 - INFO - train - 123 : progress: 13.200  loss: 0.0015 (0.0290)  lr: 0.000019
+2021-12-05 10:30:46,745 - train_v2 - INFO - train - 123 : progress: 13.399  loss: 0.0014 (0.0286)  lr: 0.000018
+2021-12-05 10:31:00,128 - train_v2 - INFO - train - 123 : progress: 13.599  loss: 0.0013 (0.0282)  lr: 0.000018
+2021-12-05 10:31:13,551 - train_v2 - INFO - train - 123 : progress: 13.798  loss: 0.0016 (0.0279)  lr: 0.000018
+2021-12-05 10:31:27,029 - train_v2 - INFO - train - 123 : progress: 13.998  loss: 0.0013 (0.0275)  lr: 0.000018
+2021-12-05 10:31:31,333 - train_v2 - INFO - train - 138 : In epoch 14, accuracy is 0.723
+2021-12-05 10:31:44,858 - train_v2 - INFO - train - 123 : progress: 14.200  loss: 0.0013 (0.0272)  lr: 0.000018
+2021-12-05 10:31:58,412 - train_v2 - INFO - train - 123 : progress: 14.399  loss: 0.0013 (0.0268)  lr: 0.000017
+2021-12-05 10:32:12,029 - train_v2 - INFO - train - 123 : progress: 14.599  loss: 0.0014 (0.0265)  lr: 0.000017
+2021-12-05 10:32:25,727 - train_v2 - INFO - train - 123 : progress: 14.798  loss: 0.0013 (0.0262)  lr: 0.000017
+2021-12-05 10:32:39,427 - train_v2 - INFO - train - 123 : progress: 14.998  loss: 0.0013 (0.0259)  lr: 0.000017
+2021-12-05 10:32:43,752 - train_v2 - INFO - train - 138 : In epoch 15, accuracy is 0.722
+2021-12-05 10:32:57,532 - train_v2 - INFO - train - 123 : progress: 15.200  loss: 0.0012 (0.0256)  lr: 0.000016
+2021-12-05 10:33:11,339 - train_v2 - INFO - train - 123 : progress: 15.399  loss: 0.0010 (0.0253)  lr: 0.000016
+2021-12-05 10:33:25,160 - train_v2 - INFO - train - 123 : progress: 15.599  loss: 0.0015 (0.0250)  lr: 0.000016
+2021-12-05 10:33:39,115 - train_v2 - INFO - train - 123 : progress: 15.798  loss: 0.0012 (0.0247)  lr: 0.000016
+2021-12-05 10:33:53,046 - train_v2 - INFO - train - 123 : progress: 15.998  loss: 0.0012 (0.0245)  lr: 0.000016
+2021-12-05 10:33:57,349 - train_v2 - INFO - train - 138 : In epoch 16, accuracy is 0.731
+2021-12-05 10:33:57,771 - train_v2 - INFO - train - 144 : previous acc is 0.729 and current acc is 0.731
+2021-12-05 10:34:11,686 - train_v2 - INFO - train - 123 : progress: 16.200  loss: 0.0009 (0.0242)  lr: 0.000015
+2021-12-05 10:34:25,682 - train_v2 - INFO - train - 123 : progress: 16.399  loss: 0.0010 (0.0239)  lr: 0.000015
+2021-12-05 10:34:39,710 - train_v2 - INFO - train - 123 : progress: 16.599  loss: 0.0009 (0.0237)  lr: 0.000015
+2021-12-05 10:34:53,719 - train_v2 - INFO - train - 123 : progress: 16.798  loss: 0.0010 (0.0234)  lr: 0.000015
+2021-12-05 10:35:07,810 - train_v2 - INFO - train - 123 : progress: 16.998  loss: 0.0010 (0.0232)  lr: 0.000014
+2021-12-05 10:35:12,118 - train_v2 - INFO - train - 138 : In epoch 17, accuracy is 0.7315
+2021-12-05 10:35:12,533 - train_v2 - INFO - train - 144 : previous acc is 0.731 and current acc is 0.7315
+2021-12-05 10:35:26,721 - train_v2 - INFO - train - 123 : progress: 17.200  loss: 0.0007 (0.0229)  lr: 0.000014
+2021-12-05 10:35:40,937 - train_v2 - INFO - train - 123 : progress: 17.399  loss: 0.0009 (0.0227)  lr: 0.000014
+2021-12-05 10:35:55,218 - train_v2 - INFO - train - 123 : progress: 17.599  loss: 0.0008 (0.0225)  lr: 0.000014
+2021-12-05 10:36:09,523 - train_v2 - INFO - train - 123 : progress: 17.798  loss: 0.0010 (0.0223)  lr: 0.000014
+2021-12-05 10:36:23,823 - train_v2 - INFO - train - 123 : progress: 17.998  loss: 0.0010 (0.0221)  lr: 0.000013
+2021-12-05 10:36:28,136 - train_v2 - INFO - train - 138 : In epoch 18, accuracy is 0.729
+2021-12-05 10:36:42,424 - train_v2 - INFO - train - 123 : progress: 18.200  loss: 0.0007 (0.0218)  lr: 0.000013
+2021-12-05 10:36:56,745 - train_v2 - INFO - train - 123 : progress: 18.399  loss: 0.0009 (0.0216)  lr: 0.000013
+2021-12-05 10:37:11,196 - train_v2 - INFO - train - 123 : progress: 18.599  loss: 0.0007 (0.0214)  lr: 0.000013
+2021-12-05 10:37:25,798 - train_v2 - INFO - train - 123 : progress: 18.798  loss: 0.0011 (0.0212)  lr: 0.000012
+2021-12-05 10:37:40,413 - train_v2 - INFO - train - 123 : progress: 18.998  loss: 0.0011 (0.0210)  lr: 0.000012
+2021-12-05 10:37:44,723 - train_v2 - INFO - train - 138 : In epoch 19, accuracy is 0.7325
+2021-12-05 10:37:45,143 - train_v2 - INFO - train - 144 : previous acc is 0.7315 and current acc is 0.7325
+2021-12-05 10:37:59,666 - train_v2 - INFO - train - 123 : progress: 19.200  loss: 0.0010 (0.0208)  lr: 0.000012
+2021-12-05 10:38:14,328 - train_v2 - INFO - train - 123 : progress: 19.399  loss: 0.0007 (0.0206)  lr: 0.000012
+2021-12-05 10:38:28,989 - train_v2 - INFO - train - 123 : progress: 19.599  loss: 0.0012 (0.0205)  lr: 0.000012
+2021-12-05 10:38:43,564 - train_v2 - INFO - train - 123 : progress: 19.798  loss: 0.0008 (0.0203)  lr: 0.000011
+2021-12-05 10:38:58,461 - train_v2 - INFO - train - 123 : progress: 19.998  loss: 0.0009 (0.0201)  lr: 0.000011
+2021-12-05 10:39:02,801 - train_v2 - INFO - train - 138 : In epoch 20, accuracy is 0.732
+2021-12-05 10:39:17,771 - train_v2 - INFO - train - 123 : progress: 20.200  loss: 0.0009 (0.0200)  lr: 0.000011
+2021-12-05 10:39:32,712 - train_v2 - INFO - train - 123 : progress: 20.399  loss: 0.0007 (0.0198)  lr: 0.000011
+2021-12-05 10:39:47,858 - train_v2 - INFO - train - 123 : progress: 20.599  loss: 0.0007 (0.0196)  lr: 0.000010
+2021-12-05 10:40:03,092 - train_v2 - INFO - train - 123 : progress: 20.798  loss: 0.0007 (0.0195)  lr: 0.000010
+2021-12-05 10:40:18,415 - train_v2 - INFO - train - 123 : progress: 20.998  loss: 0.0009 (0.0193)  lr: 0.000010
+2021-12-05 10:40:22,744 - train_v2 - INFO - train - 138 : In epoch 21, accuracy is 0.732
+2021-12-05 10:40:38,208 - train_v2 - INFO - train - 123 : progress: 21.200  loss: 0.0008 (0.0192)  lr: 0.000010
+2021-12-05 10:40:53,407 - train_v2 - INFO - train - 123 : progress: 21.399  loss: 0.0005 (0.0190)  lr: 0.000010
+2021-12-05 10:41:08,631 - train_v2 - INFO - train - 123 : progress: 21.599  loss: 0.0007 (0.0188)  lr: 0.000009
+2021-12-05 10:41:23,770 - train_v2 - INFO - train - 123 : progress: 21.798  loss: 0.0007 (0.0187)  lr: 0.000009
+2021-12-05 10:41:39,009 - train_v2 - INFO - train - 123 : progress: 21.998  loss: 0.0008 (0.0185)  lr: 0.000009
+2021-12-05 10:41:43,320 - train_v2 - INFO - train - 138 : In epoch 22, accuracy is 0.731
+2021-12-05 10:41:58,666 - train_v2 - INFO - train - 123 : progress: 22.200  loss: 0.0007 (0.0184)  lr: 0.000009
+2021-12-05 10:42:14,107 - train_v2 - INFO - train - 123 : progress: 22.399  loss: 0.0008 (0.0183)  lr: 0.000008
+2021-12-05 10:42:29,415 - train_v2 - INFO - train - 123 : progress: 22.599  loss: 0.0008 (0.0181)  lr: 0.000008
+2021-12-05 10:42:44,722 - train_v2 - INFO - train - 123 : progress: 22.798  loss: 0.0008 (0.0180)  lr: 0.000008
+2021-12-05 10:43:00,079 - train_v2 - INFO - train - 123 : progress: 22.998  loss: 0.0007 (0.0178)  lr: 0.000008
+2021-12-05 10:43:04,393 - train_v2 - INFO - train - 138 : In epoch 23, accuracy is 0.735
+2021-12-05 10:43:04,818 - train_v2 - INFO - train - 144 : previous acc is 0.7325 and current acc is 0.735
+2021-12-05 10:43:20,159 - train_v2 - INFO - train - 123 : progress: 23.200  loss: 0.0008 (0.0177)  lr: 0.000008
+2021-12-05 10:43:35,548 - train_v2 - INFO - train - 123 : progress: 23.399  loss: 0.0006 (0.0176)  lr: 0.000007
+2021-12-05 10:43:51,020 - train_v2 - INFO - train - 123 : progress: 23.599  loss: 0.0005 (0.0174)  lr: 0.000007
+2021-12-05 10:44:06,793 - train_v2 - INFO - train - 123 : progress: 23.798  loss: 0.0010 (0.0173)  lr: 0.000007
+2021-12-05 10:44:22,547 - train_v2 - INFO - train - 123 : progress: 23.998  loss: 0.0005 (0.0172)  lr: 0.000007
+2021-12-05 10:44:26,853 - train_v2 - INFO - train - 138 : In epoch 24, accuracy is 0.7355
+2021-12-05 10:44:27,274 - train_v2 - INFO - train - 144 : previous acc is 0.735 and current acc is 0.7355
+2021-12-05 10:44:42,912 - train_v2 - INFO - train - 123 : progress: 24.200  loss: 0.0007 (0.0171)  lr: 0.000006
+2021-12-05 10:44:58,612 - train_v2 - INFO - train - 123 : progress: 24.399  loss: 0.0006 (0.0170)  lr: 0.000006
+2021-12-05 10:45:14,381 - train_v2 - INFO - train - 123 : progress: 24.599  loss: 0.0006 (0.0169)  lr: 0.000006
+2021-12-05 10:45:30,091 - train_v2 - INFO - train - 123 : progress: 24.798  loss: 0.0006 (0.0167)  lr: 0.000006
+2021-12-05 10:45:45,888 - train_v2 - INFO - train - 123 : progress: 24.998  loss: 0.0008 (0.0166)  lr: 0.000006
+2021-12-05 10:45:50,237 - train_v2 - INFO - train - 138 : In epoch 25, accuracy is 0.737
+2021-12-05 10:45:50,659 - train_v2 - INFO - train - 144 : previous acc is 0.7355 and current acc is 0.737
+2021-12-05 10:46:06,684 - train_v2 - INFO - train - 123 : progress: 25.200  loss: 0.0006 (0.0165)  lr: 0.000005
+2021-12-05 10:46:22,694 - train_v2 - INFO - train - 123 : progress: 25.399  loss: 0.0008 (0.0164)  lr: 0.000005
+2021-12-05 10:46:38,670 - train_v2 - INFO - train - 123 : progress: 25.599  loss: 0.0007 (0.0163)  lr: 0.000005
+2021-12-05 10:46:54,883 - train_v2 - INFO - train - 123 : progress: 25.798  loss: 0.0007 (0.0162)  lr: 0.000005
+2021-12-05 10:47:10,903 - train_v2 - INFO - train - 123 : progress: 25.998  loss: 0.0007 (0.0161)  lr: 0.000004
+2021-12-05 10:47:15,227 - train_v2 - INFO - train - 138 : In epoch 26, accuracy is 0.738
+2021-12-05 10:47:15,646 - train_v2 - INFO - train - 144 : previous acc is 0.737 and current acc is 0.738
+2021-12-05 10:47:31,829 - train_v2 - INFO - train - 123 : progress: 26.200  loss: 0.0008 (0.0160)  lr: 0.000004
+2021-12-05 10:47:47,989 - train_v2 - INFO - train - 123 : progress: 26.399  loss: 0.0007 (0.0159)  lr: 0.000004
+2021-12-05 10:48:04,206 - train_v2 - INFO - train - 123 : progress: 26.599  loss: 0.0006 (0.0157)  lr: 0.000004
+2021-12-05 10:48:20,791 - train_v2 - INFO - train - 123 : progress: 26.798  loss: 0.0006 (0.0156)  lr: 0.000004
+2021-12-05 10:48:37,228 - train_v2 - INFO - train - 123 : progress: 26.998  loss: 0.0005 (0.0156)  lr: 0.000003
+2021-12-05 10:48:41,566 - train_v2 - INFO - train - 138 : In epoch 27, accuracy is 0.7355
+2021-12-05 10:48:57,814 - train_v2 - INFO - train - 123 : progress: 27.200  loss: 0.0003 (0.0155)  lr: 0.000003
+2021-12-05 10:49:14,108 - train_v2 - INFO - train - 123 : progress: 27.399  loss: 0.0006 (0.0154)  lr: 0.000003
+2021-12-05 10:49:30,468 - train_v2 - INFO - train - 123 : progress: 27.599  loss: 0.0005 (0.0153)  lr: 0.000003
+2021-12-05 10:49:46,838 - train_v2 - INFO - train - 123 : progress: 27.798  loss: 0.0004 (0.0152)  lr: 0.000002
+2021-12-05 10:50:03,274 - train_v2 - INFO - train - 123 : progress: 27.998  loss: 0.0005 (0.0151)  lr: 0.000002
+2021-12-05 10:50:07,637 - train_v2 - INFO - train - 138 : In epoch 28, accuracy is 0.7375
+2021-12-05 10:50:24,278 - train_v2 - INFO - train - 123 : progress: 28.200  loss: 0.0005 (0.0150)  lr: 0.000002
+2021-12-05 10:50:40,865 - train_v2 - INFO - train - 123 : progress: 28.399  loss: 0.0007 (0.0149)  lr: 0.000002
+2021-12-05 10:50:57,516 - train_v2 - INFO - train - 123 : progress: 28.599  loss: 0.0006 (0.0148)  lr: 0.000002
+2021-12-05 10:51:14,123 - train_v2 - INFO - train - 123 : progress: 28.798  loss: 0.0006 (0.0147)  lr: 0.000001
+2021-12-05 10:51:30,803 - train_v2 - INFO - train - 123 : progress: 28.998  loss: 0.0004 (0.0146)  lr: 0.000001
+2021-12-05 10:51:35,146 - train_v2 - INFO - train - 138 : In epoch 29, accuracy is 0.7365
+2021-12-05 10:51:51,831 - train_v2 - INFO - train - 123 : progress: 29.200  loss: 0.0005 (0.0146)  lr: 0.000001
+2021-12-05 10:52:08,550 - train_v2 - INFO - train - 123 : progress: 29.399  loss: 0.0003 (0.0145)  lr: 0.000001
+2021-12-05 10:52:25,379 - train_v2 - INFO - train - 123 : progress: 29.599  loss: 0.0006 (0.0144)  lr: 0.000000
+2021-12-05 10:52:42,215 - train_v2 - INFO - train - 123 : progress: 29.798  loss: 0.0003 (0.0143)  lr: 0.000000
+2021-12-05 10:52:59,261 - train_v2 - INFO - train - 123 : progress: 29.998  loss: 0.0006 (0.0142)  lr: 0.000000
+2021-12-05 10:53:03,590 - train_v2 - INFO - train - 138 : In epoch 30, accuracy is 0.7365
