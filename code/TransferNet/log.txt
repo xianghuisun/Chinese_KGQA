@@ -1,0 +1,331 @@
+2021-12-06 11:28:32,683 - main - INFO - <module> - 63 : bad count : 0
+2021-12-06 11:28:32,728 - main - INFO - <module> - 78 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:28:33,446 - main - INFO - <module> - 159 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:28:35,754 - main - INFO - <module> - 164 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:29:13,933 - main - INFO - <module> - 63 : bad count : 0
+2021-12-06 11:29:13,978 - main - INFO - <module> - 78 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:29:14,709 - main - INFO - <module> - 159 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:29:17,075 - main - INFO - <module> - 164 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:30:07,707 - main - INFO - <module> - 63 : bad count : 0
+2021-12-06 11:30:07,754 - main - INFO - <module> - 78 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:30:08,492 - main - INFO - <module> - 159 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:30:10,844 - main - INFO - <module> - 164 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:32:10,824 - main - INFO - kgqa - 172 : 请求参数：{"query": "你知道<香港>有什么明星吗？"}
+2021-12-06 11:33:27,846 - main - INFO - <module> - 64 : bad count : 0
+2021-12-06 11:33:27,900 - main - INFO - <module> - 79 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:33:28,628 - main - INFO - <module> - 160 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:33:30,956 - main - INFO - <module> - 165 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:33:36,815 - main - INFO - kgqa - 173 : 请求参数：{"query": "你知道<香港>有什么明星吗？"}
+2021-12-06 11:33:36,823 - main - INFO - kgqa - 186 : 用户问题：你知道<香港>有什么明星吗？
+2021-12-06 11:33:36,824 - main - INFO - kgqa - 193 : topic entity is 香港
+2021-12-06 11:33:36,824 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 香港 by NE : 你知道NE有什么明星吗？
+2021-12-06 11:34:00,633 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 11:34:00,679 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:34:01,412 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:34:03,774 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:34:05,964 - main - INFO - kgqa - 174 : 请求参数：{"query": "你知道<香港>有什么明星吗？"}
+2021-12-06 11:34:05,964 - main - INFO - kgqa - 187 : 用户问题：你知道<香港>有什么明星吗？
+2021-12-06 11:34:05,965 - main - INFO - kgqa - 194 : topic entity is 香港
+2021-12-06 11:34:05,965 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 香港 by NE : 你知道NE有什么明星吗？
+2021-12-06 11:34:30,924 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 11:34:30,979 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:34:31,708 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:34:34,046 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:34:38,229 - main - INFO - kgqa - 174 : 请求参数：{"query": "你知道<香港>有什么明星吗？"}
+2021-12-06 11:34:38,237 - main - INFO - kgqa - 187 : 用户问题：你知道<香港>有什么明星吗？
+2021-12-06 11:34:38,238 - main - INFO - kgqa - 194 : topic entity is 香港
+2021-12-06 11:34:38,238 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 香港 by NE : 你知道NE有什么明星吗？
+2021-12-06 11:34:38,243 - main - INFO - kgqa - 205 : error:get_result-1:Traceback (most recent call last):
+  File "/home/xhsun/Desktop/code/KG/TransferNet-master/ChineseQA/app.py", line 199, in kgqa
+    score,predict_id=get_answer(query=query,topic_entity=topic_entity,tokenizer=tokenizer,ent2id=ent2id)
+  File "/home/xhsun/Desktop/code/KG/TransferNet-master/ChineseQA/utils.py", line 48, in get_answer
+    result=model(*(one_hot_head.unsqueeze(0),token_ids))
+NameError: name 'model' is not defined
+
+2021-12-06 11:34:38,243 - main - ERROR - kgqa - 206 : name 'model' is not defined
+Traceback (most recent call last):
+  File "/home/xhsun/Desktop/code/KG/TransferNet-master/ChineseQA/app.py", line 199, in kgqa
+    score,predict_id=get_answer(query=query,topic_entity=topic_entity,tokenizer=tokenizer,ent2id=ent2id)
+  File "/home/xhsun/Desktop/code/KG/TransferNet-master/ChineseQA/utils.py", line 48, in get_answer
+    result=model(*(one_hot_head.unsqueeze(0),token_ids))
+NameError: name 'model' is not defined
+2021-12-06 11:34:38,243 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了6.069660186767578 ms
+2021-12-06 11:35:53,430 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 11:35:53,477 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:35:54,214 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:35:56,570 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:36:01,049 - main - INFO - kgqa - 174 : 请求参数：{"query": "你知道<香港>有什么明星吗？"}
+2021-12-06 11:36:01,058 - main - INFO - kgqa - 187 : 用户问题：你知道<香港>有什么明星吗？
+2021-12-06 11:36:01,058 - main - INFO - kgqa - 194 : topic entity is 香港
+2021-12-06 11:36:01,059 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 香港 by NE : 你知道NE有什么明星吗？
+2021-12-06 11:36:01,152 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了94.09594535827637 ms
+2021-12-06 11:37:18,217 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁知道<犀皮漆耳杯>制作于哪个朝代？"}
+2021-12-06 11:37:18,226 - main - INFO - kgqa - 187 : 用户问题：谁知道<犀皮漆耳杯>制作于哪个朝代？
+2021-12-06 11:37:18,226 - main - INFO - kgqa - 194 : topic entity is 犀皮漆耳杯
+2021-12-06 11:37:18,226 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 犀皮漆耳杯 by NE : 谁知道NE制作于哪个朝代？
+2021-12-06 11:37:18,314 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了88.46521377563477 ms
+2021-12-06 11:37:24,875 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁知道犀皮漆耳杯制作于哪个朝代？"}
+2021-12-06 11:37:24,876 - main - INFO - kgqa - 187 : 用户问题：谁知道犀皮漆耳杯制作于哪个朝代？
+2021-12-06 11:37:25,113 - main - INFO - kgqa - 194 : topic entity is B-entI-entI-entI-entI-ent
+2021-12-06 11:37:25,113 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了237.60533332824707 ms
+2021-12-06 11:38:44,503 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 11:38:44,557 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:38:45,295 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:38:47,652 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:38:50,993 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁知道犀皮漆耳杯制作于哪个朝代？"}
+2021-12-06 11:38:50,995 - main - INFO - kgqa - 187 : 用户问题：谁知道犀皮漆耳杯制作于哪个朝代？
+2021-12-06 11:38:51,222 - main - INFO - kgqa - 194 : topic entity is 犀皮漆耳杯
+2021-12-06 11:38:51,222 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 犀皮漆耳杯 by NE : 谁知道NE制作于哪个朝代？
+2021-12-06 11:38:51,310 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了315.29998779296875 ms
+2021-12-06 11:40:52,094 - main - INFO - kgqa - 174 : 请求参数：{"query": "请问<孙尚香>的母亲是谁？"}
+2021-12-06 11:40:52,103 - main - INFO - kgqa - 187 : 用户问题：请问<孙尚香>的母亲是谁？
+2021-12-06 11:40:52,103 - main - INFO - kgqa - 194 : topic entity is 孙尚香
+2021-12-06 11:40:52,103 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 孙尚香 by NE : 请问NE的母亲是谁？
+2021-12-06 11:40:52,193 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了90.58022499084473 ms
+2021-12-06 11:41:29,815 - main - INFO - kgqa - 174 : 请求参数：{"query": "<高峰>擅长什么运动？"}
+2021-12-06 11:41:29,816 - main - INFO - kgqa - 187 : 用户问题：<高峰>擅长什么运动？
+2021-12-06 11:41:29,816 - main - INFO - kgqa - 194 : topic entity is 高峰
+2021-12-06 11:41:29,816 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 高峰 by NE : NE擅长什么运动？
+2021-12-06 11:41:29,904 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了88.4549617767334 ms
+2021-12-06 11:41:53,348 - main - INFO - kgqa - 174 : 请求参数：{"query": "<老人与钉子>是什么族的啊？"}
+2021-12-06 11:41:53,349 - main - INFO - kgqa - 187 : 用户问题：<老人与钉子>是什么族的啊？
+2021-12-06 11:41:53,349 - main - INFO - kgqa - 194 : topic entity is 老人与钉子
+2021-12-06 11:41:53,349 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 老人与钉子 by NE : NE是什么族的啊？
+2021-12-06 11:41:53,434 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了85.64352989196777 ms
+2021-12-06 11:42:14,422 - main - INFO - kgqa - 174 : 请求参数：{"query": "老人与钉子是什么族的啊？"}
+2021-12-06 11:42:14,423 - main - INFO - kgqa - 187 : 用户问题：老人与钉子是什么族的啊？
+2021-12-06 11:42:14,453 - main - INFO - kgqa - 194 : topic entity is 老人与钉子
+2021-12-06 11:42:14,453 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 老人与钉子 by NE : NE是什么族的啊？
+2021-12-06 11:42:14,534 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了110.84794998168945 ms
+2021-12-06 11:42:19,861 - main - INFO - kgqa - 174 : 请求参数：{"query": "“<法海！你不懂爱>”属于哪种分类的游戏？"}
+2021-12-06 11:42:19,870 - main - INFO - kgqa - 187 : 用户问题：“<法海！你不懂爱>”属于哪种分类的游戏？
+2021-12-06 11:42:19,870 - main - INFO - kgqa - 194 : topic entity is 法海！你不懂爱
+2021-12-06 11:42:19,871 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 法海！你不懂爱 by NE : “NE”属于哪种分类的游戏？
+2021-12-06 11:42:19,960 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了90.15536308288574 ms
+2021-12-06 11:42:31,420 - main - INFO - kgqa - 174 : 请求参数：{"query": "法海！你不懂爱属于哪种分类的游戏？"}
+2021-12-06 11:42:31,429 - main - INFO - kgqa - 187 : 用户问题：法海！你不懂爱属于哪种分类的游戏？
+2021-12-06 11:42:31,463 - main - INFO - kgqa - 194 : topic entity is 法海！你不懂爱
+2021-12-06 11:42:31,463 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 法海！你不懂爱 by NE : NE属于哪种分类的游戏？
+2021-12-06 11:42:31,547 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了118.07656288146973 ms
+2021-12-06 11:43:00,234 - main - INFO - kgqa - 174 : 请求参数：{"query": "你知道<王劲松>的家乡是哪里吗？"}
+2021-12-06 11:43:00,236 - main - INFO - kgqa - 187 : 用户问题：你知道<王劲松>的家乡是哪里吗？
+2021-12-06 11:43:00,236 - main - INFO - kgqa - 194 : topic entity is 王劲松
+2021-12-06 11:43:00,236 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 王劲松 by NE : 你知道NE的家乡是哪里吗？
+2021-12-06 11:43:00,320 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了83.78410339355469 ms
+2021-12-06 11:43:20,449 - main - INFO - kgqa - 174 : 请求参数：{"query": "请问<龙泉镇>有什么知名产业吗？"}
+2021-12-06 11:43:20,451 - main - INFO - kgqa - 187 : 用户问题：请问<龙泉镇>有什么知名产业吗？
+2021-12-06 11:43:20,451 - main - INFO - kgqa - 194 : topic entity is 龙泉镇
+2021-12-06 11:43:20,451 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 龙泉镇 by NE : 请问NE有什么知名产业吗？
+2021-12-06 11:43:20,537 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了86.04717254638672 ms
+2021-12-06 11:43:45,592 - main - INFO - kgqa - 174 : 请求参数：{"query": "<山海经>共有多少字"}
+2021-12-06 11:43:45,601 - main - INFO - kgqa - 187 : 用户问题：<山海经>共有多少字
+2021-12-06 11:43:45,601 - main - INFO - kgqa - 194 : topic entity is 山海经
+2021-12-06 11:43:45,601 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 山海经 by NE : NE共有多少字
+2021-12-06 11:43:45,690 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了89.16449546813965 ms
+2021-12-06 11:43:58,306 - main - INFO - kgqa - 174 : 请求参数：{"query": "山海经共有多少字"}
+2021-12-06 11:43:58,315 - main - INFO - kgqa - 187 : 用户问题：山海经共有多少字
+2021-12-06 11:43:58,341 - main - INFO - kgqa - 194 : topic entity is 山海经
+2021-12-06 11:43:58,341 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 山海经 by NE : NE共有多少字
+2021-12-06 11:43:58,429 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了113.44122886657715 ms
+2021-12-06 11:44:04,122 - main - INFO - kgqa - 174 : 请求参数：{"query": "我想问一下山海经共有多少字"}
+2021-12-06 11:44:04,131 - main - INFO - kgqa - 187 : 用户问题：我想问一下山海经共有多少字
+2021-12-06 11:44:04,145 - main - INFO - kgqa - 194 : topic entity is 山海经
+2021-12-06 11:44:04,145 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 山海经 by NE : 我想问一下NE共有多少字
+2021-12-06 11:44:04,230 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了98.66476058959961 ms
+2021-12-06 11:44:13,509 - main - INFO - kgqa - 174 : 请求参数：{"query": "<时间简史>作者是谁"}
+2021-12-06 11:44:13,518 - main - INFO - kgqa - 187 : 用户问题：<时间简史>作者是谁
+2021-12-06 11:44:13,518 - main - INFO - kgqa - 194 : topic entity is 时间简史
+2021-12-06 11:44:13,518 - main - INFO - kgqa - 210 : 整个QA流程总计消耗了0.4398822784423828 ms
+2021-12-06 11:45:45,271 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 11:45:45,325 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 11:45:46,055 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 11:45:48,408 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 11:45:54,797 - main - INFO - kgqa - 174 : 请求参数：{"query": "<时间简史>作者是谁"}
+2021-12-06 11:45:54,806 - main - INFO - kgqa - 187 : 用户问题：<时间简史>作者是谁
+2021-12-06 11:45:54,807 - main - INFO - kgqa - 194 : topic entity is 时间简史
+2021-12-06 11:45:54,807 - main - INFO - kgqa - 198 : Can not find topic entity 时间简史 in entities
+2021-12-06 11:45:54,807 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了1.5082359313964844 ms
+2021-12-06 11:46:06,060 - main - INFO - kgqa - 174 : 请求参数：{"query": "时间简史作者是谁"}
+2021-12-06 11:46:06,068 - main - INFO - kgqa - 187 : 用户问题：时间简史作者是谁
+2021-12-06 11:46:06,308 - main - INFO - kgqa - 194 : topic entity is 时间简史
+2021-12-06 11:46:06,308 - main - INFO - kgqa - 198 : Can not find topic entity 时间简史 in entities
+2021-12-06 11:46:06,308 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了239.3949031829834 ms
+2021-12-06 15:48:59,575 - main - INFO - <module> - 65 : bad count : 0
+2021-12-06 15:48:59,619 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-06 15:49:00,335 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-06 15:49:02,641 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-06 15:49:34,457 - main - INFO - kgqa - 174 : 请求参数：{"query": "时间简史作者是谁"}
+2021-12-06 15:49:34,466 - main - INFO - kgqa - 187 : 用户问题：时间简史作者是谁
+2021-12-06 15:49:34,702 - main - INFO - kgqa - 194 : topic entity is 时间简史
+2021-12-06 15:49:34,702 - main - INFO - kgqa - 198 : Can not find topic entity 时间简史 in entities
+2021-12-06 15:49:34,702 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了235.6710433959961 ms
+2021-12-06 15:50:00,132 - main - INFO - kgqa - 174 : 请求参数：{"query": "请问<海棠>的同伴是谁？"}
+2021-12-06 15:50:00,133 - main - INFO - kgqa - 187 : 用户问题：请问<海棠>的同伴是谁？
+2021-12-06 15:50:00,133 - main - INFO - kgqa - 194 : topic entity is 海棠
+2021-12-06 15:50:00,133 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 海棠 by NE : 请问NE的同伴是谁？
+2021-12-06 15:50:00,197 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了64.08357620239258 ms
+2021-12-06 15:50:21,446 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁知道<花木兰>是哪个公司发行的？"}
+2021-12-06 15:50:21,449 - main - INFO - kgqa - 187 : 用户问题：谁知道<花木兰>是哪个公司发行的？
+2021-12-06 15:50:21,449 - main - INFO - kgqa - 194 : topic entity is 花木兰
+2021-12-06 15:50:21,449 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 花木兰 by NE : 谁知道NE是哪个公司发行的？
+2021-12-06 15:50:21,535 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了86.58361434936523 ms
+2021-12-06 15:50:43,902 - main - INFO - kgqa - 174 : 请求参数：{"query": "我很想知道<斐迪南·福煦>是什么职位啊？"}
+2021-12-06 15:50:43,911 - main - INFO - kgqa - 187 : 用户问题：我很想知道<斐迪南·福煦>是什么职位啊？
+2021-12-06 15:50:43,911 - main - INFO - kgqa - 194 : topic entity is 斐迪南·福煦
+2021-12-06 15:50:43,911 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 斐迪南·福煦 by NE : 我很想知道NE是什么职位啊？
+2021-12-06 15:50:43,998 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.54849433898926 ms
+2021-12-06 15:50:52,578 - main - INFO - kgqa - 174 : 请求参数：{"query": "我很想知道斐迪南·福煦是什么职位啊？"}
+2021-12-06 15:50:52,579 - main - INFO - kgqa - 187 : 用户问题：我很想知道斐迪南·福煦是什么职位啊？
+2021-12-06 15:50:52,614 - main - INFO - kgqa - 194 : topic entity is 斐迪南·福煦
+2021-12-06 15:50:52,614 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 斐迪南·福煦 by NE : 我很想知道NE是什么职位啊？
+2021-12-06 15:50:52,698 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了119.09246444702148 ms
+2021-12-06 15:51:15,032 - main - INFO - kgqa - 174 : 请求参数：{"query": "斐迪南·福煦是什么职位啊？"}
+2021-12-06 15:51:15,041 - main - INFO - kgqa - 187 : 用户问题：斐迪南·福煦是什么职位啊？
+2021-12-06 15:51:15,077 - main - INFO - kgqa - 194 : topic entity is 斐迪南·福煦
+2021-12-06 15:51:15,077 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 斐迪南·福煦 by NE : NE是什么职位啊？
+2021-12-06 15:51:15,161 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了120.12314796447754 ms
+2021-12-06 15:51:20,028 - main - INFO - kgqa - 174 : 请求参数：{"query": "我很好奇<纽约>有哪些名人"}
+2021-12-06 15:51:20,037 - main - INFO - kgqa - 187 : 用户问题：我很好奇<纽约>有哪些名人
+2021-12-06 15:51:20,037 - main - INFO - kgqa - 194 : topic entity is 纽约
+2021-12-06 15:51:20,037 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 纽约 by NE : 我很好奇NE有哪些名人
+2021-12-06 15:51:20,106 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了68.9401626586914 ms
+2021-12-06 15:51:24,742 - main - INFO - kgqa - 174 : 请求参数：{"query": "纽约有哪些名人"}
+2021-12-06 15:51:24,751 - main - INFO - kgqa - 187 : 用户问题：纽约有哪些名人
+2021-12-06 15:51:24,766 - main - INFO - kgqa - 194 : topic entity is 纽约
+2021-12-06 15:51:24,766 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 纽约 by NE : NE有哪些名人
+2021-12-06 15:51:24,849 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了97.8078842163086 ms
+2021-12-06 15:52:06,607 - main - INFO - kgqa - 174 : 请求参数：{"query": "<胡斐>出演过哪些作品？"}
+2021-12-06 15:52:06,607 - main - INFO - kgqa - 187 : 用户问题：<胡斐>出演过哪些作品？
+2021-12-06 15:52:06,607 - main - INFO - kgqa - 194 : topic entity is 胡斐
+2021-12-06 15:52:06,608 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 胡斐 by NE : NE出演过哪些作品？
+2021-12-06 15:52:06,683 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了76.03788375854492 ms
+2021-12-06 15:52:10,331 - main - INFO - kgqa - 174 : 请求参数：{"query": "胡斐出演过哪些作品？"}
+2021-12-06 15:52:10,331 - main - INFO - kgqa - 187 : 用户问题：胡斐出演过哪些作品？
+2021-12-06 15:52:10,364 - main - INFO - kgqa - 194 : topic entity is 胡斐
+2021-12-06 15:52:10,364 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 胡斐 by NE : NE出演过哪些作品？
+2021-12-06 15:52:10,436 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了104.7525405883789 ms
+2021-12-06 15:52:27,370 - main - INFO - kgqa - 174 : 请求参数：{"query": "<酸碱平衡法>属于哪个科室？"}
+2021-12-06 15:52:27,378 - main - INFO - kgqa - 187 : 用户问题：<酸碱平衡法>属于哪个科室？
+2021-12-06 15:52:27,379 - main - INFO - kgqa - 194 : topic entity is 酸碱平衡法
+2021-12-06 15:52:27,379 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 酸碱平衡法 by NE : NE属于哪个科室？
+2021-12-06 15:52:27,467 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.75632286071777 ms
+2021-12-06 15:52:33,255 - main - INFO - kgqa - 174 : 请求参数：{"query": "酸碱平衡法属于哪个科室？"}
+2021-12-06 15:52:33,263 - main - INFO - kgqa - 187 : 用户问题：酸碱平衡法属于哪个科室？
+2021-12-06 15:52:33,300 - main - INFO - kgqa - 194 : topic entity is 酸碱平衡法
+2021-12-06 15:52:33,300 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 酸碱平衡法 by NE : NE属于哪个科室？
+2021-12-06 15:52:33,372 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了109.16662216186523 ms
+2021-12-06 15:52:36,133 - main - INFO - kgqa - 174 : 请求参数：{"query": "酸碱平衡法属于哪个科室"}
+2021-12-06 15:52:36,133 - main - INFO - kgqa - 187 : 用户问题：酸碱平衡法属于哪个科室
+2021-12-06 15:52:36,161 - main - INFO - kgqa - 194 : topic entity is 酸碱平衡法
+2021-12-06 15:52:36,161 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 酸碱平衡法 by NE : NE属于哪个科室
+2021-12-06 15:52:36,243 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了110.15939712524414 ms
+2021-12-06 15:53:01,277 - main - INFO - kgqa - 174 : 请求参数：{"query": "<哈姆雷特>的对白原音是什么语的"}
+2021-12-06 15:53:01,286 - main - INFO - kgqa - 187 : 用户问题：<哈姆雷特>的对白原音是什么语的
+2021-12-06 15:53:01,286 - main - INFO - kgqa - 194 : topic entity is 哈姆雷特
+2021-12-06 15:53:01,286 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 哈姆雷特 by NE : NE的对白原音是什么语的
+2021-12-06 15:53:01,364 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了78.90963554382324 ms
+2021-12-06 15:53:02,881 - main - INFO - kgqa - 174 : 请求参数：{"query": "<哈姆雷特>的对白原音是什么语的"}
+2021-12-06 15:53:02,881 - main - INFO - kgqa - 187 : 用户问题：<哈姆雷特>的对白原音是什么语的
+2021-12-06 15:53:02,882 - main - INFO - kgqa - 194 : topic entity is 哈姆雷特
+2021-12-06 15:53:02,882 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 哈姆雷特 by NE : NE的对白原音是什么语的
+2021-12-06 15:53:02,970 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.4099006652832 ms
+2021-12-06 15:53:07,495 - main - INFO - kgqa - 174 : 请求参数：{"query": "哈姆雷特的对白原音是什么语的"}
+2021-12-06 15:53:07,496 - main - INFO - kgqa - 187 : 用户问题：哈姆雷特的对白原音是什么语的
+2021-12-06 15:53:07,527 - main - INFO - kgqa - 194 : topic entity is 哈姆雷特
+2021-12-06 15:53:07,527 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 哈姆雷特 by NE : NE的对白原音是什么语的
+2021-12-06 15:53:07,612 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了115.81707000732422 ms
+2021-12-06 15:53:16,851 - main - INFO - kgqa - 174 : 请求参数：{"query": "<云南大学>的地址在哪吗"}
+2021-12-06 15:53:16,852 - main - INFO - kgqa - 187 : 用户问题：<云南大学>的地址在哪吗
+2021-12-06 15:53:16,852 - main - INFO - kgqa - 194 : topic entity is 云南大学
+2021-12-06 15:53:16,852 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 云南大学 by NE : NE的地址在哪吗
+2021-12-06 15:53:16,940 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.18578720092773 ms
+2021-12-06 15:53:27,177 - main - INFO - kgqa - 174 : 请求参数：{"query": "云南大学地址在哪"}
+2021-12-06 15:53:27,186 - main - INFO - kgqa - 187 : 用户问题：云南大学地址在哪
+2021-12-06 15:53:27,221 - main - INFO - kgqa - 194 : topic entity is 云南大学
+2021-12-06 15:53:27,221 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 云南大学 by NE : NE地址在哪
+2021-12-06 15:53:27,305 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了119.23360824584961 ms
+2021-12-06 15:53:38,439 - main - INFO - kgqa - 174 : 请求参数：{"query": "<《疯狂的麦克斯》>什么时候拍摄的？"}
+2021-12-06 15:53:38,447 - main - INFO - kgqa - 187 : 用户问题：<《疯狂的麦克斯》>什么时候拍摄的？
+2021-12-06 15:53:38,447 - main - INFO - kgqa - 194 : topic entity is 《疯狂的麦克斯》
+2021-12-06 15:53:38,448 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 《疯狂的麦克斯》 by NE : NE什么时候拍摄的？
+2021-12-06 15:53:38,531 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了83.72735977172852 ms
+2021-12-06 15:53:51,121 - main - INFO - kgqa - 174 : 请求参数：{"query": "《疯狂的麦克斯》什么时候拍摄的？"}
+2021-12-06 15:53:51,130 - main - INFO - kgqa - 187 : 用户问题：《疯狂的麦克斯》什么时候拍摄的？
+2021-12-06 15:53:51,165 - main - INFO - kgqa - 194 : topic entity is 疯狂的麦克斯
+2021-12-06 15:53:51,165 - main - INFO - kgqa - 198 : Can not find topic entity 疯狂的麦克斯 in entities
+2021-12-06 15:53:51,165 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了35.73751449584961 ms
+2021-12-06 15:54:20,205 - main - INFO - kgqa - 174 : 请求参数：{"query": "请问<幸福的眼泪>每集有多久？"}
+2021-12-06 15:54:20,206 - main - INFO - kgqa - 187 : 用户问题：请问<幸福的眼泪>每集有多久？
+2021-12-06 15:54:20,206 - main - INFO - kgqa - 194 : topic entity is 幸福的眼泪
+2021-12-06 15:54:20,206 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 幸福的眼泪 by NE : 请问NE每集有多久？
+2021-12-06 15:54:20,293 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.49794960021973 ms
+2021-12-06 15:55:07,295 - main - INFO - kgqa - 174 : 请求参数：{"query": "<《鹿鼎记》>通过什么平台播出？"}
+2021-12-06 15:55:07,296 - main - INFO - kgqa - 187 : 用户问题：<《鹿鼎记》>通过什么平台播出？
+2021-12-06 15:55:07,296 - main - INFO - kgqa - 194 : topic entity is 《鹿鼎记》
+2021-12-06 15:55:07,296 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 《鹿鼎记》 by NE : NE通过什么平台播出？
+2021-12-06 15:55:07,383 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.22782135009766 ms
+2021-12-06 15:55:20,749 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁能说出<多瑞欣>的化学名称是什么？"}
+2021-12-06 15:55:20,757 - main - INFO - kgqa - 187 : 用户问题：谁能说出<多瑞欣>的化学名称是什么？
+2021-12-06 15:55:20,757 - main - INFO - kgqa - 194 : topic entity is 多瑞欣
+2021-12-06 15:55:20,758 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 多瑞欣 by NE : 谁能说出NE的化学名称是什么？
+2021-12-06 15:55:20,844 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.26835250854492 ms
+2021-12-06 15:55:29,493 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁能说出多瑞欣的化学名称是什么？"}
+2021-12-06 15:55:29,493 - main - INFO - kgqa - 187 : 用户问题：谁能说出多瑞欣的化学名称是什么？
+2021-12-06 15:55:29,528 - main - INFO - kgqa - 194 : topic entity is 多瑞欣
+2021-12-06 15:55:29,528 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 多瑞欣 by NE : 谁能说出NE的化学名称是什么？
+2021-12-06 15:55:29,613 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了119.28749084472656 ms
+2021-12-06 15:55:45,088 - main - INFO - kgqa - 174 : 请求参数：{"query": "谁知道<异次元>的术语是什么"}
+2021-12-06 15:55:45,097 - main - INFO - kgqa - 187 : 用户问题：谁知道<异次元>的术语是什么
+2021-12-06 15:55:45,097 - main - INFO - kgqa - 194 : topic entity is 异次元
+2021-12-06 15:55:45,097 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 异次元 by NE : 谁知道NE的术语是什么
+2021-12-06 15:55:45,184 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.47124671936035 ms
+2021-12-06 15:56:04,330 - main - INFO - kgqa - 174 : 请求参数：{"query": "你知道<黑河>的面积有多大吗？"}
+2021-12-06 15:56:04,338 - main - INFO - kgqa - 187 : 用户问题：你知道<黑河>的面积有多大吗？
+2021-12-06 15:56:04,339 - main - INFO - kgqa - 194 : topic entity is 黑河
+2021-12-06 15:56:04,339 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 黑河 by NE : 你知道NE的面积有多大吗？
+2021-12-06 15:56:04,427 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.55342864990234 ms
+2021-12-06 15:56:17,910 - main - INFO - kgqa - 174 : 请求参数：{"query": "<曼陀山庄>被称为"}
+2021-12-06 15:56:17,919 - main - INFO - kgqa - 187 : 用户问题：<曼陀山庄>被称为
+2021-12-06 15:56:17,919 - main - INFO - kgqa - 194 : topic entity is 曼陀山庄
+2021-12-06 15:56:17,919 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 曼陀山庄 by NE : NE被称为
+2021-12-06 15:56:18,007 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.23823928833008 ms
+2021-12-06 15:56:27,294 - main - INFO - kgqa - 174 : 请求参数：{"query": "<曼陀山庄>被称为？"}
+2021-12-06 15:56:27,303 - main - INFO - kgqa - 187 : 用户问题：<曼陀山庄>被称为？
+2021-12-06 15:56:27,303 - main - INFO - kgqa - 194 : topic entity is 曼陀山庄
+2021-12-06 15:56:27,303 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 曼陀山庄 by NE : NE被称为？
+2021-12-06 15:56:27,380 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了77.8648853302002 ms
+2021-12-06 15:56:44,616 - main - INFO - kgqa - 174 : 请求参数：{"query": "<俄罗斯>的gdp总计是多少？"}
+2021-12-06 15:56:44,625 - main - INFO - kgqa - 187 : 用户问题：<俄罗斯>的gdp总计是多少？
+2021-12-06 15:56:44,625 - main - INFO - kgqa - 194 : topic entity is 俄罗斯
+2021-12-06 15:56:44,625 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 俄罗斯 by NE : NE的gdp总计是多少？
+2021-12-06 15:56:44,714 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了89.17498588562012 ms
+2021-12-06 15:57:15,744 - main - INFO - kgqa - 174 : 请求参数：{"query": "<种植屋面配套材料>有多少抗拉强度？"}
+2021-12-06 15:57:15,753 - main - INFO - kgqa - 187 : 用户问题：<种植屋面配套材料>有多少抗拉强度？
+2021-12-06 15:57:15,753 - main - INFO - kgqa - 194 : topic entity is 种植屋面配套材料
+2021-12-06 15:57:15,753 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 种植屋面配套材料 by NE : NE有多少抗拉强度？
+2021-12-06 15:57:15,834 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了81.48980140686035 ms
+2021-12-06 15:57:24,198 - main - INFO - kgqa - 174 : 请求参数：{"query": "<重庆钻石王朝俱乐部>的公司规模有多大？"}
+2021-12-06 15:57:24,200 - main - INFO - kgqa - 187 : 用户问题：<重庆钻石王朝俱乐部>的公司规模有多大？
+2021-12-06 15:57:24,201 - main - INFO - kgqa - 194 : topic entity is 重庆钻石王朝俱乐部
+2021-12-06 15:57:24,201 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 重庆钻石王朝俱乐部 by NE : NE的公司规模有多大？
+2021-12-06 15:57:24,287 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了86.7319107055664 ms
+2021-12-06 15:57:35,000 - main - INFO - kgqa - 174 : 请求参数：{"query": "<淮安东站>的规划面积是多少？"}
+2021-12-06 15:57:35,009 - main - INFO - kgqa - 187 : 用户问题：<淮安东站>的规划面积是多少？
+2021-12-06 15:57:35,009 - main - INFO - kgqa - 194 : topic entity is 淮安东站
+2021-12-06 15:57:35,009 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 淮安东站 by NE : NE的规划面积是多少？
+2021-12-06 15:57:35,097 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了87.80574798583984 ms
+2021-12-06 15:57:40,470 - main - INFO - kgqa - 174 : 请求参数：{"query": "淮安东站的规划面积是多少？"}
+2021-12-06 15:57:40,472 - main - INFO - kgqa - 187 : 用户问题：淮安东站的规划面积是多少？
+2021-12-06 15:57:40,507 - main - INFO - kgqa - 194 : topic entity is 淮安东站
+2021-12-06 15:57:40,507 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 淮安东站 by NE : NE的规划面积是多少？
+2021-12-06 15:57:40,563 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了91.55797958374023 ms
+2021-12-06 15:57:56,903 - main - INFO - kgqa - 174 : 请求参数：{"query": "我想知道<安娜·卡列尼娜>是什么时候出品的？"}
+2021-12-06 15:57:56,903 - main - INFO - kgqa - 187 : 用户问题：我想知道<安娜·卡列尼娜>是什么时候出品的？
+2021-12-06 15:57:56,903 - main - INFO - kgqa - 194 : topic entity is 安娜·卡列尼娜
+2021-12-06 15:57:56,904 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 安娜·卡列尼娜 by NE : 我想知道NE是什么时候出品的？
+2021-12-06 15:57:56,991 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了88.18387985229492 ms
+2021-12-06 15:58:16,607 - main - INFO - kgqa - 174 : 请求参数：{"query": "我想知道<送张嘉父长官>的第一句"}
+2021-12-06 15:58:16,609 - main - INFO - kgqa - 187 : 用户问题：我想知道<送张嘉父长官>的第一句
+2021-12-06 15:58:16,610 - main - INFO - kgqa - 194 : topic entity is 送张嘉父长官
+2021-12-06 15:58:16,610 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 送张嘉父长官 by NE : 我想知道NE的第一句
+2021-12-06 15:58:16,685 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了75.35982131958008 ms
