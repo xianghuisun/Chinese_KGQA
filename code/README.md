@@ -61,7 +61,12 @@ app.py是服务启动的文件，代码中的几个路径变量需要修改成�
 
 启动方式：
 ```bash
+cd TransferNet
 python app.py
 ```
 
 可以在app.run(debug=True,host='0.0.0.0',port='12333',use_reloader=False)中指定端口
+
+
+# 参考
+[TransferNet](https://github.com/shijx12/TransferNet)
