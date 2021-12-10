@@ -329,3 +329,23 @@ NameError: name 'model' is not defined
 2021-12-06 15:58:16,610 - main - INFO - kgqa - 194 : topic entity is 送张嘉父长官
 2021-12-06 15:58:16,610 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 送张嘉父长官 by NE : 我想知道NE的第一句
 2021-12-06 15:58:16,685 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了75.35982131958008 ms
+2021-12-10 11:26:04,073 - main - INFO - <module> - 65 : bad count : 0
+2021-12-10 11:26:04,120 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-10 11:26:04,850 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-10 11:26:07,243 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-10 11:27:02,752 - main - INFO - <module> - 65 : bad count : 0
+2021-12-10 11:27:02,798 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-10 11:27:03,529 - main - INFO - <module> - 161 : TransferNet Model has been successfully loaded!!!!
+2021-12-10 11:27:05,880 - main - INFO - <module> - 166 : Ner Model has been successfully loaded!!!!
+2021-12-10 11:27:08,036 - main - INFO - kgqa - 174 : 请求参数：{"query": "我想知道<送张嘉父长官>的第一句"}
+2021-12-10 11:27:08,036 - main - INFO - kgqa - 187 : 用户问题：我想知道<送张嘉父长官>的第一句
+2021-12-10 11:27:08,036 - main - INFO - kgqa - 194 : topic entity is 送张嘉父长官
+2021-12-10 11:27:08,037 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 送张嘉父长官 by NE : 我想知道NE的第一句
+2021-12-10 11:27:08,102 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了66.42913818359375 ms
+2021-12-10 11:27:08,102 - main - INFO - kgqa - 215 : 返回答案：都城昔倾盖
+2021-12-10 11:27:17,299 - main - INFO - kgqa - 174 : 请求参数：{"query": "我想知道送张嘉父长官的第一句"}
+2021-12-10 11:27:17,300 - main - INFO - kgqa - 187 : 用户问题：我想知道送张嘉父长官的第一句
+2021-12-10 11:27:17,586 - main - INFO - kgqa - 194 : topic entity is 送张嘉父长官
+2021-12-10 11:27:17,586 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 送张嘉父长官 by NE : 我想知道NE的第一句
+2021-12-10 11:27:17,644 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了344.0883159637451 ms
+2021-12-10 11:27:17,644 - main - INFO - kgqa - 215 : 返回答案：都城昔倾盖
