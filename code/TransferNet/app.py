@@ -161,7 +161,7 @@ kgqa_model.load_state_dict(torch.load('/home/xhsun/Desktop/code/KG/TransferNet-m
 logger.info("TransferNet Model has been successfully loaded!!!!")
 
 ####################################### Load KGQA model #######################################
-ner_model_path='/home/xhsun/notebook/TransferNet/NER'
+ner_model_path='/home/xhsun/Desktop/notebook/TransferNet/NER'
 ner_model=Ner(ner_model_path,label2id=None,is_finetune=True,use_crf=True)
 logger.info("Ner Model has been successfully loaded!!!!")
 
@@ -212,6 +212,7 @@ def kgqa():
     else:
         logger.info("state is False")
 
+    logger.info("返回答案：{}".format(result))
     return json.dumps(result,ensure_ascii=False)
 
 
