@@ -1,5 +1,4 @@
-#当前的train是源代码的没有经过修改的train.py
-import os
+import os,json
 import torch
 import torch.optim as optim
 import torch.nn as nn
@@ -8,24 +7,44 @@ import shutil
 from tqdm import tqdm
 import numpy as np
 import time
-from utils.misc import MetricLogger, batch_device, RAdam
-from utils.lr_scheduler import get_linear_schedule_with_warmup
+from .utils import MetricLogger, batch_device, RAdam, get_linear_schedule_with_warmup
 from .data import load_data
 from .model import TransferNet
 from .predict import validate
 from transformers import AdamW
 import logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)-8s %(message)s')
-logFormatter = logging.Formatter('%(asctime)s %(levelname)-8s %(message)s')
-rootLogger = logging.getLogger()
+from visdom import Visdom
+
+save_dir='./save_dir'
+os.makedirs(save_dir,exist_ok=True)
+
+logger=logging.getLogger('train')
+logger.setLevel(logging.INFO)
+
+fh=logging.FileHandler(os.path.join(save_dir,'log.txt'))
+fh.setLevel(logging.INFO)
+
+ch=logging.StreamHandler()
+ch.setLevel(logging.ERROR)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(funcName)s - %(lineno)d : %(message)s')
+
+fh.setFormatter(formatter)
+ch.setFormatter(formatter)
+
+logger.addHandler(fh)
+#logger.handlers=[fh]
+logger.addHandler(ch)
+
 
 torch.set_num_threads(1) # avoid using multiple cpus
 
+vis=Visdom(env='train',log_to_filename=os.path.join(save_dir,'vis_log'))
 
 def train(args):
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    ent2id, rel2id, triples, train_loader, val_loader = load_data(args.fbwq_dir,args.webqas_dir, args.bert_name, args.batch_size, args.cache_dir)
+    ent2id, rel2id, triples, train_loader, val_loader = load_data(args.knowledge_dir,args.qa_dir, args.bert_name, args.batch_size, args.cache_dir)
     logging.info("Create model.........")
     logging.info("Entity nums : {} and relation nums : {}, triple nums : {}".format(len(ent2id),len(rel2id),len(triples)))
     model = TransferNet(args, ent2id, rel2id, triples)
@@ -64,15 +83,22 @@ def train(args):
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=t_total)
     meters = MetricLogger(delimiter="  ")
     # validate(args, model, val_loader, device)
-    logging.info("Start training........")
+    logger.info("Start training........")
     previous_acc=0.0
     acc = validate(args, model, val_loader, device)
-    logging.info(acc)
+    logger.info('Accuracy before training is {}'.format(acc))
+    global_step=0
     for epoch in tqdm(range(args.num_epoch)):
         model.train()
         for iteration, batch in enumerate(train_loader):
             iteration = iteration + 1
             loss = model(*batch_device(batch, device))
+
+            vis.line([optimizer.param_groups[0]['lr']],[global_step],win=f'learning rate',
+                    opts=dict(title=f'learning rate', xlabel='step', ylabel='lr'), update='append')
+            vis.line([loss['loss'].item()],[global_step],win=f'training loss',
+                    opts=dict(title=f'training loss', xlabel='step', ylabel='loss'), update='append')
+            
             optimizer.zero_grad()
             if isinstance(loss, dict):
                 if len(loss) > 1:
@@ -88,11 +114,12 @@ def train(args):
             nn.utils.clip_grad_norm_(model.parameters(), 2)
             optimizer.step()
             scheduler.step()
+            global_step+=1
 
             if iteration % (len(train_loader) // 5) == 0:
             # if True:
                 
-                logging.info(
+                logger.info(
                     meters.delimiter.join(
                         [
                             "progress: {progress:.3f}",
@@ -105,20 +132,24 @@ def train(args):
                         lr=optimizer.param_groups[0]["lr"],
                     )
                 )
-        if (epoch+1)%1 == 0:
-            acc = validate(args, model, val_loader, device)
-            logging.info(acc)
-            if acc> previous_acc:
-                torch.save(model.state_dict(), os.path.join(args.save_dir, 'model.pt'))
-                logging.info("previous acc is {} and current acc is {}".format(previous_acc,acc))
-                previous_acc=acc
+
+        acc = validate(args, model, val_loader, device)
+        logger.info("In epoch {}, accuracy is {}".format(epoch+1,acc))
+        vis.line([acc],[global_step],win=f'accuracy',
+                opts=dict(title=f'accuracy', xlabel='step', ylabel='accuracy', markers=True, markersize=10), update='append')
+        
+        if acc> previous_acc:
+            torch.save(model.state_dict(), os.path.join(args.save_dir, 'model.pt'))
+            logger.info("previous acc is {} and current acc is {}".format(previous_acc,acc))
+            previous_acc=acc
+
 def main():
     parser = argparse.ArgumentParser()
     # input and output
-    parser.add_argument('--fbwq_dir', default = '/home/xhsun/Desktop/KG/nlpcc2018/knowledge/small_knowledge', help='path to the KG')
-    parser.add_argument('--webqas_dir', default = '/home/xhsun/Desktop/KG/QApairs/ChineseQA', help='path to the data')
+    parser.add_argument('--knowledge_dir', default = '/home/xhsun/Desktop/KG/nlpcc2018/knowledge/small_knowledge', help='path to the KG')
+    parser.add_argument('--qa_dir', default = '/home/xhsun/Desktop/KG/QApairs/ChineseQA', help='path to the data')
     parser.add_argument('--cache_dir', default = './cache_dir/Chinese', help='path to the data')
-    parser.add_argument('--save_dir', default='./save_dir/Chinese', help='path to save checkpoints and logs')
+    parser.add_argument('--save_dir', default=save_dir, help='path to save checkpoints and logs')
     parser.add_argument('--ckpt', default = None)
     # training parameters
     parser.add_argument('--bert_lr', default=3e-5, type=float)
@@ -133,20 +164,14 @@ def main():
     parser.add_argument('--bert_name', default='/home/xhsun/Desktop/huggingfaceModels/chinese-roberta-wwm')
     args = parser.parse_args()
 
-    # make logging.info display into both shell and file
-    if not os.path.exists(args.save_dir):
-        os.makedirs(args.save_dir)
-    if not os.path.exists(args.cache_dir):
-        os.makedirs(args.cache_dir)
-
-    time_ = time.strftime("%Y-%m-%d-%H:%M:%S", time.localtime())
-    args.log_name = time_ + '_{}_{}_{}.log'.format(args.opt, args.lr, args.batch_size)
-    fileHandler = logging.FileHandler(os.path.join(args.save_dir, args.log_name))
-    fileHandler.setFormatter(logFormatter)
-    rootLogger.addHandler(fileHandler)
     # args display
+    args_config={}
     for k, v in vars(args).items():
-        logging.info(k+':'+str(v))
+        logger.info(k+':'+str(v))
+        args_config[k]=v
+
+    with open(os.path.join(save_dir,'args_config.dict'),'w') as f:
+        json.dump(args_config,f,ensure_ascii=False)
 
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False

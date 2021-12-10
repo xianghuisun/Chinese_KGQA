@@ -157,7 +157,8 @@ class TransferNet(nn.Module):
         }
 
 kgqa_model = TransferNet()
-kgqa_model.load_state_dict(torch.load('/home/xhsun/Desktop/code/KG/TransferNet-master/save_dir/original_experiment/model.pt',map_location='cpu'))
+save_model_path = '/home/xhsun/Desktop/code/KG/TransferNet-master/save_dir/model.pt'
+kgqa_model.load_state_dict(torch.load(save_model_path,map_location='cpu'))
 logger.info("TransferNet Model has been successfully loaded!!!!")
 
 ####################################### Load KGQA model #######################################
