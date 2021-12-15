@@ -4,9 +4,9 @@ import torch.nn as nn
 import argparse
 from tqdm import tqdm
 from collections import defaultdict
-from utils.misc import batch_device
-from .data import load_data
-from .model import TransferNet
+from utils import batch_device
+from data import load_data
+from model import TransferNet
 
 from IPython import embed
 

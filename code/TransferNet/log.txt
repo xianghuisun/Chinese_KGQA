@@ -349,3 +349,161 @@ NameError: name 'model' is not defined
 2021-12-10 11:27:17,586 - main.utils - INFO - convert_tokens_to_ids - 13 : Replace topic entity 送张嘉父长官 by NE : 我想知道NE的第一句
 2021-12-10 11:27:17,644 - main - INFO - kgqa - 211 : 整个QA流程总计消耗了344.0883159637451 ms
 2021-12-10 11:27:17,644 - main - INFO - kgqa - 215 : 返回答案：都城昔倾盖
+2021-12-14 15:09:23,770 - main - INFO - <module> - 65 : bad count : 0
+2021-12-14 15:09:23,818 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-14 15:09:24,650 - main - INFO - <module> - 162 : TransferNet Model has been successfully loaded!!!!
+2021-12-14 15:09:27,110 - main - INFO - <module> - 167 : Ner Model has been successfully loaded!!!!
+2021-12-14 15:15:03,467 - main - INFO - kgqa - 175 : 请求参数：{"query": "《碧血剑》的导演是谁？"}
+2021-12-14 15:15:03,468 - main - INFO - kgqa - 188 : 用户问题：《碧血剑》的导演是谁？
+2021-12-14 15:15:03,726 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:15:03,726 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演是谁？
+2021-12-14 15:15:03,787 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了319.9653625488281 ms
+2021-12-14 15:15:03,788 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:15:07,696 - main - INFO - kgqa - 175 : 请求参数：{"query": "《碧血剑》的导演是谁"}
+2021-12-14 15:15:07,696 - main - INFO - kgqa - 188 : 用户问题：《碧血剑》的导演是谁
+2021-12-14 15:15:07,708 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:15:07,708 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演是谁
+2021-12-14 15:15:07,764 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了67.87705421447754 ms
+2021-12-14 15:15:07,764 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:15:11,185 - main - INFO - kgqa - 175 : 请求参数：{"query": "《碧血剑》的导演"}
+2021-12-14 15:15:11,185 - main - INFO - kgqa - 188 : 用户问题：《碧血剑》的导演
+2021-12-14 15:15:11,197 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:15:11,197 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演
+2021-12-14 15:15:11,254 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了68.39179992675781 ms
+2021-12-14 15:15:11,254 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:15:22,875 - main - INFO - kgqa - 175 : 请求参数：{"query": "<《碧血剑》>的导演"}
+2021-12-14 15:15:22,875 - main - INFO - kgqa - 188 : 用户问题：<《碧血剑》>的导演
+2021-12-14 15:15:22,876 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:15:22,876 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演
+2021-12-14 15:15:22,935 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了59.91196632385254 ms
+2021-12-14 15:15:22,935 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:17:18,605 - main - INFO - kgqa - 175 : 请求参数：{"query": "<《碧血剑》>的导演"}
+2021-12-14 15:17:18,605 - main - INFO - kgqa - 188 : 用户问题：<《碧血剑》>的导演
+2021-12-14 15:17:18,605 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:17:18,605 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演
+2021-12-14 15:17:18,664 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了58.73990058898926 ms
+2021-12-14 15:17:18,664 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:19:36,589 - main - INFO - kgqa - 175 : 请求参数：{"query": "周杰伦的妻子"}
+2021-12-14 15:19:36,590 - main - INFO - kgqa - 188 : 用户问题：周杰伦的妻子
+2021-12-14 15:19:36,624 - main - INFO - kgqa - 195 : topic entity is 周杰伦
+2021-12-14 15:19:36,624 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 周杰伦 by NE : NE的妻子
+2021-12-14 15:19:36,681 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了91.1707878112793 ms
+2021-12-14 15:19:36,681 - main - INFO - kgqa - 216 : 返回答案：《青花瓷》、《兰亭序》、《千里之外》
+2021-12-14 15:19:55,061 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道<解构金庸>的人号称什么啊"}
+2021-12-14 15:19:55,062 - main - INFO - kgqa - 188 : 用户问题：谁知道<解构金庸>的人号称什么啊
+2021-12-14 15:19:55,062 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-14 15:19:55,062 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-14 15:19:55,121 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了59.203386306762695 ms
+2021-12-14 15:19:55,121 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-14 15:20:03,590 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-14 15:20:03,590 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-14 15:20:03,620 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-14 15:20:03,620 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-14 15:20:03,677 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了86.94148063659668 ms
+2021-12-14 15:20:03,677 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-14 15:28:04,186 - main - INFO - kgqa - 175 : 请求参数：{"query": "《碧血剑》的导演"}
+2021-12-14 15:28:04,187 - main - INFO - kgqa - 188 : 用户问题：《碧血剑》的导演
+2021-12-14 15:28:04,217 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:28:04,217 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演
+2021-12-14 15:28:04,274 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了87.4631404876709 ms
+2021-12-14 15:28:04,274 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:30:23,661 - main - INFO - kgqa - 175 : 请求参数：{"query": "《碧血剑》的导演"}
+2021-12-14 15:30:23,662 - main - INFO - kgqa - 188 : 用户问题：《碧血剑》的导演
+2021-12-14 15:30:23,697 - main - INFO - kgqa - 195 : topic entity is 《碧血剑》
+2021-12-14 15:30:23,697 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 《碧血剑》 by NE : NE的导演
+2021-12-14 15:30:23,754 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了91.89605712890625 ms
+2021-12-14 15:30:23,754 - main - INFO - kgqa - 216 : 返回答案：华夏视听
+2021-12-14 15:45:10,804 - main - INFO - kgqa - 175 : 请求参数：{"query": "张艺谋的作品"}
+2021-12-14 15:45:10,805 - main - INFO - kgqa - 188 : 用户问题：张艺谋的作品
+2021-12-14 15:45:10,834 - main - INFO - kgqa - 195 : topic entity is 张艺谋
+2021-12-14 15:45:10,834 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 张艺谋 by NE : NE的作品
+2021-12-14 15:45:10,890 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了85.41369438171387 ms
+2021-12-14 15:45:10,890 - main - INFO - kgqa - 216 : 返回答案：红高粱，秋菊打官司，大红灯笼高高挂，活着，英雄，金陵十三钗等
+2021-12-15 09:28:43,557 - main - INFO - <module> - 65 : bad count : 0
+2021-12-15 09:28:43,608 - main - INFO - <module> - 80 : triple size: 369812, num_entities : 191000, num_relations : 3906
+2021-12-15 09:28:44,450 - main - INFO - <module> - 162 : TransferNet Model has been successfully loaded!!!!
+2021-12-15 09:28:47,386 - main - INFO - <module> - 167 : Ner Model has been successfully loaded!!!!
+2021-12-15 09:28:57,670 - main - INFO - kgqa - 175 : 请求参数：{"query": "张艺谋的作品"}
+2021-12-15 09:28:57,671 - main - INFO - kgqa - 188 : 用户问题：张艺谋的作品
+2021-12-15 09:28:57,967 - main - INFO - kgqa - 195 : topic entity is 张艺谋
+2021-12-15 09:28:57,967 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 张艺谋 by NE : NE的作品
+2021-12-15 09:28:58,031 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了360.28599739074707 ms
+2021-12-15 09:28:58,031 - main - INFO - kgqa - 216 : 返回答案：红高粱，秋菊打官司，大红灯笼高高挂，活着，英雄，金陵十三钗等
+2021-12-15 09:29:53,368 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道<解构金庸>的人号称什么啊?"}
+2021-12-15 09:29:53,368 - main - INFO - kgqa - 188 : 用户问题：谁知道<解构金庸>的人号称什么啊?
+2021-12-15 09:29:53,368 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:29:53,368 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊?
+2021-12-15 09:29:53,427 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了59.42058563232422 ms
+2021-12-15 09:29:53,427 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:32:02,882 - main - INFO - kgqa - 175 : 请求参数：{"query": "<飘柔>的代言人都是谁？"}
+2021-12-15 09:32:02,882 - main - INFO - kgqa - 188 : 用户问题：<飘柔>的代言人都是谁？
+2021-12-15 09:32:02,883 - main - INFO - kgqa - 195 : topic entity is 飘柔
+2021-12-15 09:32:02,883 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 飘柔 by NE : NE的代言人都是谁？
+2021-12-15 09:32:02,942 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了59.879302978515625 ms
+2021-12-15 09:32:02,942 - main - INFO - kgqa - 216 : 返回答案：杨幂、罗志祥、曾恺玹、陈思诚等
+2021-12-15 09:32:14,823 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道<解构金庸>的人号称什么啊"}
+2021-12-15 09:32:14,823 - main - INFO - kgqa - 188 : 用户问题：谁知道<解构金庸>的人号称什么啊
+2021-12-15 09:32:14,823 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:32:14,824 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:32:14,884 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了60.533761978149414 ms
+2021-12-15 09:32:14,884 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:35:16,719 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-15 09:35:16,720 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-15 09:35:16,754 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:35:16,754 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:35:16,810 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了90.13819694519043 ms
+2021-12-15 09:35:16,810 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:35:35,041 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-15 09:35:35,041 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-15 09:35:35,072 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:35:35,072 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:35:35,129 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了87.25404739379883 ms
+2021-12-15 09:35:35,129 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:45:09,227 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-15 09:45:09,228 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-15 09:45:09,262 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:45:09,262 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:45:09,318 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了90.36016464233398 ms
+2021-12-15 09:45:09,318 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:47:05,593 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-15 09:47:05,593 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-15 09:47:05,627 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:47:05,627 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:47:05,683 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了89.36429023742676 ms
+2021-12-15 09:47:05,683 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:47:10,333 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道<解构金庸>的人号称什么啊"}
+2021-12-15 09:47:10,333 - main - INFO - kgqa - 188 : 用户问题：谁知道<解构金庸>的人号称什么啊
+2021-12-15 09:47:10,334 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:47:10,334 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:47:10,392 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了59.009552001953125 ms
+2021-12-15 09:47:10,393 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 09:57:47,548 - main - INFO - kgqa - 175 : 请求参数：{"query": "谁知道解构金庸的人号称什么啊"}
+2021-12-15 09:57:47,548 - main - INFO - kgqa - 188 : 用户问题：谁知道解构金庸的人号称什么啊
+2021-12-15 09:57:47,579 - main - INFO - kgqa - 195 : topic entity is 解构金庸
+2021-12-15 09:57:47,579 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 解构金庸 by NE : 谁知道NE的人号称什么啊
+2021-12-15 09:57:47,635 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了87.32748031616211 ms
+2021-12-15 09:57:47,635 - main - INFO - kgqa - 216 : 返回答案：武林百晓生”
+2021-12-15 10:22:24,909 - main - INFO - kgqa - 175 : 请求参数：{"query": "周杰伦的妻子"}
+2021-12-15 10:22:24,910 - main - INFO - kgqa - 188 : 用户问题：周杰伦的妻子
+2021-12-15 10:22:24,944 - main - INFO - kgqa - 195 : topic entity is 周杰伦
+2021-12-15 10:22:24,944 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 周杰伦 by NE : NE的妻子
+2021-12-15 10:22:25,001 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了91.12691879272461 ms
+2021-12-15 10:22:25,001 - main - INFO - kgqa - 216 : 返回答案：《青花瓷》、《兰亭序》、《千里之外》
+2021-12-15 10:22:35,197 - main - INFO - kgqa - 175 : 请求参数：{"query": "周杰伦的代表作品"}
+2021-12-15 10:22:35,198 - main - INFO - kgqa - 188 : 用户问题：周杰伦的代表作品
+2021-12-15 10:22:35,210 - main - INFO - kgqa - 195 : topic entity is 周杰伦
+2021-12-15 10:22:35,210 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 周杰伦 by NE : NE的代表作品
+2021-12-15 10:22:35,266 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了68.76826286315918 ms
+2021-12-15 10:22:35,267 - main - INFO - kgqa - 216 : 返回答案：头文字D
+2021-12-15 10:27:14,613 - main - INFO - kgqa - 175 : 请求参数：{"query": "周杰伦的代表作品"}
+2021-12-15 10:27:14,613 - main - INFO - kgqa - 188 : 用户问题：周杰伦的代表作品
+2021-12-15 10:27:14,643 - main - INFO - kgqa - 195 : topic entity is 周杰伦
+2021-12-15 10:27:14,643 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 周杰伦 by NE : NE的代表作品
+2021-12-15 10:27:14,699 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了85.56246757507324 ms
+2021-12-15 10:27:14,699 - main - INFO - kgqa - 216 : 返回答案：头文字D
+2021-12-15 10:27:20,761 - main - INFO - kgqa - 175 : 请求参数：{"query": "周杰伦的妻子"}
+2021-12-15 10:27:20,762 - main - INFO - kgqa - 188 : 用户问题：周杰伦的妻子
+2021-12-15 10:27:20,774 - main - INFO - kgqa - 195 : topic entity is 周杰伦
+2021-12-15 10:27:20,774 - main.utils - INFO - convert_tokens_to_ids - 38 : Replace topic entity 周杰伦 by NE : NE的妻子
+2021-12-15 10:27:20,830 - main - INFO - kgqa - 212 : 整个QA流程总计消耗了68.52340698242188 ms
+2021-12-15 10:27:20,830 - main - INFO - kgqa - 216 : 返回答案：《青花瓷》、《兰亭序》、《千里之外》

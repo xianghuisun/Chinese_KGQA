@@ -7,10 +7,10 @@ import shutil
 from tqdm import tqdm
 import numpy as np
 import time
-from .utils import MetricLogger, batch_device, RAdam, get_linear_schedule_with_warmup
-from .data import load_data
-from .model import TransferNet
-from .predict import validate
+from utils import MetricLogger, batch_device, RAdam, get_linear_schedule_with_warmup
+from data import load_data
+from model import TransferNet
+from predict import validate
 from transformers import AdamW
 import logging
 from visdom import Visdom
