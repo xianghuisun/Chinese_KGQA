@@ -14,6 +14,9 @@ import traceback
 import logging
 logger=logging.getLogger("main.utils")
 
+def invert_dict(data_dict):
+    return {k:v for v,k in enumerate(data_dict)}
+
 def batch_device(batch, device):
     res = []
     for x in batch:

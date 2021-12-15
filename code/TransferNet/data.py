@@ -3,7 +3,7 @@ import os,re
 import pickle
 from collections import defaultdict
 from transformers import AutoTokenizer
-from utils.misc import invert_dict
+from utils import invert_dict
 from tqdm import tqdm
 
 def collate(batch):
