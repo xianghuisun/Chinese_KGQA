@@ -1,5 +1,5 @@
 # Chinese_KGQA
-**该仓库目的是实现基于知识图谱的中文问答系统**
+**该仓库目的是收集、整理基于知识图谱的中文问答系统的相关研究工作，实现一个基于知识图谱的中文问答系统**
 
 - code文件夹下存放问答模型，每一个模型是一个文件夹，用模型的名称命名
 - data文件夹下存放问答数据集
@@ -7,6 +7,15 @@
 - png文件夹下存放所需要的图片
 - result文件夹下记录code文件夹下的每一个模型在data文件夹下的每一个数据集上的实验结果
 - notebook文件夹下存放问答模型，每一个模型是一个文件夹，用模型的名称命名。与code文件夹不同的是notebook文件夹下的代码以notebook展示，尽可能的展示问答模型的细节
+- **kgclue文件夹存放[KgCLUE](https://github.com/CLUEbenchmark/KgCLUE)评测榜的代码和实验记录**
+
+
+
+## kgclue文件夹
+
+[KgCLUE](https://github.com/CLUEbenchmark/KgCLUE)是一个大规模中文开源知识图谱问答项目，提供了[评测榜](https://www.cluebenchmarks.com/kgclue.html)。
+
+该文件夹下的子文件夹以实验模型的名称命名，对应的README文件介绍了每一个实验模型以及评测分数
 
 
 
@@ -93,13 +102,15 @@
 - PKU（北大的中文百科知识图谱。链接：https://pan.baidu.com/s/1Br8eU60t2fV4crtC2HOlSg 提取码：tvv1）
 - nlpcc2018(官网：http://tcci.ccf.org.cn/conference/2018/taskdata.php 选择task7 Open Domain Question Answering，即可下载数据集。数据集包含知识图谱和问答数据)
 - 思知知识图谱（地址：https://www.ownthink.com/docs/kg/）
+- KgCLUE（地址：https://github.com/CLUEbenchmark/KgCLUE）
 
-这三个是比较大的开放域知识图谱，此外还有一些垂类领域如军事、医学、法律等领域的知识图谱，这里不再介绍。
+这四个是比较大的开放域知识图谱，此外还有一些垂类领域如军事、医学、法律等领域的知识图谱，这里不再介绍。
 
 ### 中文问答数据（基于开放域知识图谱）
 
 - ccks（https://github.com/pkumod/CKBQA/tree/master/data）
 - nlpcc2018 (官网：http://tcci.ccf.org.cn/conference/2018/taskdata.php 选择task7 Open Domain Question Answering，即可下载数据集。数据集包含知识图谱和问答数据)
+- KgCLUE（地址：https://github.com/CLUEbenchmark/KgCLUE）
 
 ### 个人总结的博客
 
